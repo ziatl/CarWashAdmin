@@ -1,0 +1,94 @@
+<div class="wrapper">
+  <div class="sidebar" data-color="purple" data-image="assets/img/sidebar-5.jpg">
+    <div class="sidebar-wrapper">
+      <div class="logo">
+        <a href="http://www.creative-tim.com" class="simple-text">
+          Car Wash Service
+        </a>
+      </div>
+
+      <ul class="nav">
+        <li class="active">
+          <a href="dashboard.html">
+            <i class="pe-7s-graph"></i>
+            <p>Tableau de bord</p>
+          </a>
+        </li>
+        <li>
+          <a href="table.html">
+            <i class="pe-7s-note2"></i>
+            <p>Gestion des clients</p>
+          </a>
+        </li>
+        <li class="">
+          <a routerLink="/profile" routerLinkActive="active">
+            <i class="pe-7s-user"></i>
+            <p>Profile</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-panel">
+    <nav class="navbar navbar-default navbar-fixed">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Nom d l utilisateur</a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="">
+                Connexion
+              </a>
+            </li>
+            <li>
+              <a routerLink="/join" routerLinkActive="active">
+                Inscription
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <router-outlet>
+
+          </router-outlet>
+
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container-fluid">
+        <nav class="pull-left">
+          <ul>
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <p class="copyright pull-right">
+          &copy; <script>document.write(new Date().getFullYear())</script> Creative Tim, made with love for a better web
+        </p>
+      </div>
+    </footer>
+
+  </div>
+</div>
